@@ -1,0 +1,40 @@
+.page-section {
+  position: relative;
+
+  background-color: $color-luna-green;
+  background-image: url(../img/page/page-bg@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.page-section::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  position: absolute;
+  background: linear-gradient(119.35deg, rgba(23, 26, 28, 0.72) 0%, #5e5e57 100%);
+  opacity: 0.15;
+}
+
+.page-section__wrapper {
+  position: relative;
+  z-index: 1;
+
+  min-height: 100vh;
+
+  padding-top: 74px;
+  padding-bottom: 50px;
+}
+
+.page-section__title {
+  margin-bottom: 55px;
+  padding-left: 25px;
+
+  @extend %sf-regular;
+  font-size: 44px;
+  line-height: 53px;
+}

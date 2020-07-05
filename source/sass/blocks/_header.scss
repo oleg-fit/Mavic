@@ -1,0 +1,61 @@
+.header {
+  position: fixed;
+  top: 30px;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 30px;
+
+  @extend %ubuntu-medium;
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.header__logo img {
+  height: 27px;
+  width: 185px;
+}
+
+.header__info-btn {
+  margin-right: 8px;
+  padding-top: 6px;
+  padding-right: 28px;
+  padding-bottom: 6px;
+  padding-left: 28px;
+
+  color: $color-white;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid $color-white;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  transition: all linear 0.2s;
+}
+
+.header__info-btn:focus,
+.header__info-btn:hover {
+  color: $color-black;
+  background-color: $color-white;
+}
+
+.header__info-btn:active {
+  color: $color-black;
+  background-color: rgba($color-white, 0.7);
+}
+
+.header__info-phone {
+  @extend %ubuntu-bold;
+  font-size: 16px;
+  line-height: 18px;
+}

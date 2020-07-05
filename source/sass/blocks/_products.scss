@@ -1,0 +1,53 @@
+.products__inner {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 50px;
+}
+
+.products__text {
+  max-width: 440px;
+  width: 100%;
+}
+
+.products__text p {
+  margin-bottom: 30px;
+}
+
+.products__slider-box {
+  position: relative;
+
+  padding-top: 110px;
+}
+
+.products__slider-text {
+  z-index: 5;
+  position: absolute;
+  bottom: 30px;
+  left: -250px;
+
+  max-width: 280px;
+  width: 100%;
+
+  @extend %ubuntu-medium;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+}
+
+.products__slider {
+  max-width: 560px;
+  width: 100%;
+}
+
+.products__slider::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: -17px;
+
+  width: 560px;
+  height: 276px;
+
+  border: 4px solid #ffffff;
+}

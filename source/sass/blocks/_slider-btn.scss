@@ -1,0 +1,33 @@
+.slider-btn {
+  z-index: 5;
+  position: absolute;
+  bottom: -45px;
+  right: 0;
+
+  padding-top: 16px;
+  padding-right: 26px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+
+  border: none;
+  background-color: $color-white;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.slider-btn__left {
+  right: 60px;
+}
+
+.slider-btn svg {
+  stroke: #000;
+}
+
+.slider-btn.slick-disabled {
+  background: #000;
+}
+
+.slider-btn.slick-disabled svg {
+  stroke: #fff;
+}

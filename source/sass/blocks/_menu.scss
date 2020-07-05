@@ -11,3 +11,16 @@
 .menu__list-item + .menu__list-item {
   padding-left: 20px;
 }
+
+.menu__list-link {
+  transition: all linear 0.2s;
+}
+
+.menu__list-link:focus,
+.menu__list-link:hover {
+  opacity: 0.6;
+}
+
+.menu__list-link:active {
+  opacity: 0.8;
+}

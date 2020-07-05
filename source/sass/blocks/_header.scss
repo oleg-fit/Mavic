@@ -19,6 +19,19 @@
   text-transform: uppercase;
 }
 
+.header__logo {
+  transition: all linear 0.2s;
+}
+
+.header__logo:focus,
+.header__logo:hover {
+  opacity: 0.6;
+}
+
+.header__logo:active {
+  opacity: 0.8;
+}
+
 .header__logo img {
   height: 27px;
   width: 185px;
@@ -58,4 +71,15 @@
   @extend %ubuntu-bold;
   font-size: 16px;
   line-height: 18px;
+
+  transition: all linear 0.3s;
+}
+
+.header__info-phone:focus,
+.header__info-phone:hover {
+  opacity: 0.6;
+}
+
+.header__info-phone:active {
+  opacity: 0.8;
 }

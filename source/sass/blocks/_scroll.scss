@@ -9,3 +9,16 @@
 
   text-align: center;
 }
+
+.scroll a {
+  transition: all linear 0.2s;
+}
+
+.scroll a:focus,
+.scroll a:hover {
+  background-color: $color-stromboli;
+}
+
+.scroll a:active {
+  opacity: 0.8;
+}

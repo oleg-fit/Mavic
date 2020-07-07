@@ -1,0 +1,92 @@
+.specification__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 25px;
+}
+
+.specification__item--center {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.specification__box {
+  position: relative;
+
+  max-width: 280px;
+  width: 100%;
+
+  margin-top: 10px;
+}
+
+.specification__box::before {
+  content: "";
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+.specification__box--2 {
+  margin-top: 140px;
+}
+
+.specification__box--4 {
+  margin-top: 160px;
+}
+
+.specification__box--1::before {
+  top: 16px;
+  right: -140px;
+
+  width: 229px;
+  height: 114px;
+
+  background-image: url(../img/pointers/pointer-1.svg);
+}
+
+.specification__box--2::before {
+  top: -65px;
+  right: -308px;
+
+  width: 345px;
+  height: 81px;
+
+  background-image: url(../img/pointers/pointer-2.svg);
+}
+
+.specification__box--3::before {
+  top: 16px;
+  left: -299px;
+
+  width: 258px;
+  height: 103px;
+
+  background-image: url(../img/pointers/pointer-3.svg);
+}
+.specification__box--4::before {
+  top: -73px;
+  left: -172px;
+
+  width: 124px;
+  height: 89px;
+
+  background-image: url(../img/pointers/pointer-4.svg);
+}
+
+.specification__box-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @extend %ubuntu-bold;
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.specification__box-text {
+  @extend %ubuntu-light;
+  font-size: 15px;
+  line-height: 18px;
+}
